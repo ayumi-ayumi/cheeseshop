@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+header {
+  width:1400px;
+  height: 600px;
+  background-color: #343A40;
+  color: white;
+}
+nav {
+  height: 80px;
+  display: flex;
+  /* display: inline-block; */
+}
+#logo {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+  /* margin-right: 200px; */
+}
+#navlist {
+}
+header ul li {
+  display: inline-block;
+  margin:20px;
+}
+header ul li span {
+  padding-left: 50px;
+}
+#sns {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.fb,.insta {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
