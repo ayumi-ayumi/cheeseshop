@@ -56,9 +56,148 @@ header ul li span {
   border-radius: 50%;
   margin-top: 50px;
 }
-
 header p {
   font-size: 16px;
   text-align: center;
   margin-top: 120px;
+}
+main {
+  width: 100%;
+  height: 1200px;
+  color: #4F4F4F;
+}
+#main-top h4 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2;
+}
+.cheeselists {
+  display: flex;
+  justify-content: center;
+}
+.cheese-list {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+}
+.cheese-list:last-child img {
+  transform: rotate(270deg);
+  width: 85px;
+  height: 170px;
+  margin-top: -0px;
+  margin-bottom: -44px;
+}
+.cheese-list img {
+  border-radius: 10px;
+  margin-top: 40px;
+}
+.cheese-list h5 {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.cheese-list p {
+  text-align: justify;
+  font-size: 14px;
+}
+#main-top h4:last-child {
+  margin: 50px 0;
+}
+section img {
+  border-radius: 30px;
+  width: 500px;
+  display: block;
+}
+section img:last-child {
+  border-radius: 30px;
+  height: 300px;
+  margin-right: 20px;
+  display: block;
+}
+section {
+  display: flex;
+  flex: 1;
+  margin-bottom: 50px;
+}
+.text {
+  margin: 0 20px;
+}
+.contact {
+  display: flex;
+}
+#contact-form {
+  width: 500px;
+  margin-left: 30px;
+}
+#contact-form h3 {
+  font-size: 30px;
+}
+#contact-form p {
+  font-size: 16px;
+  display: inline-block;
+}
+#contact-form p:first-child {
+  width: 70%;
+  display: inline-block;
+}
+#text {
+  width: 450px;
+  height: 60px;
+}
+.input {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
+#email, #name, .btn {
+  width: 150px;
+}
+.btn {
+  position: relative;
+}
+#btn {
+  height: 60px;
+  width: 100px;
+  border: 1px solid black;
+  box-shadow: 2px 2px rgb(120, 124, 113);
+  background-color: rgb(187, 161, 161);
+  position: absolute;
+}
+#btn:active {
+  top: 2px;
+  left: 2px;
+  box-shadow: none;
+}
+#contact-form p:last-child {
+  margin-left: 25px;
+  font-weight: bold;
+}
+#map {
+  margin-top: 25px;
+  margin-bottom: ;
+}
+#map h4 {
+  line-height: 2;
+  margin: 0;
+}
+#map img {
+  border: 1px solid black;
+}
+footer {
+  text-align: center;
+  height: 90px;
+}
+footer hr {
+  width: 20%;
+}
+footer p {
+  font-size: 12px;
+  margin: 5px 0;
+}
+footer p:first-of-type {
+  font-size: 10px;
+}
+footer p:last-of-type {
+  font-size: 14px;
 }
