@@ -8,25 +8,25 @@ header {
   color: white;
 }
 nav {
-  height: 80px;
+  height: 100px;
 }
 #logo {
-  height: 80px;
+  height: 100px;
   position: absolute;
   top:0;
   left:0;
 }
 .navlist {
-  height: 100%;
-  width: 100%;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
 }
 .navlist li {
+  height: 100px;
+  line-height: 100px;
   list-style-type: none;
-  margin:20px;
+  margin-left:50px;
 }
 header ul li span {
   padding-left: 50px;
@@ -36,13 +36,17 @@ header ul li span {
   top: 0;
   right:30px;
 }
-.sns li img{
-  height: 40px;
+.sns a{
+  display: inline-block;
   width: 40px;
-}
-.sns li {
+  height: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   padding-left: 15px;
-  display: inline;
+}
+.sns img{
+  width: 40px;
+  height: 40px;
 }
 #biglogo {
   margin: 0 auto;
@@ -50,6 +54,11 @@ header ul li span {
   width: 270px;
   height: 270px;
   border-radius: 50%;
-  /* object-fit: cover; */
-  
+  margin-top: 50px;
+}
+
+header p {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 120px;
 }
