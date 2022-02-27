@@ -1,224 +1,502 @@
-body {
-  margin: 0;
-}
-header {
-  width:100%;
-  height: 600px;
-  background-color: #343A40;
-  color: white;
-}
-nav {
-  height: 100px;
-}
-#logo {
-  height: 100px;
-  position: absolute;
-  top:0;
-  left:0;
-}
-.navlist {
-  padding: 0;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
-.navlist li{
-  height: 100px;
-  width: 122px;
-  line-height: 100px;
-  list-style-type: none;
-}
-.navlist li a {
-  text-decoration: none;
-  display: inline-block;
-  padding-left: 20px;
-}
-.navlist li a:last-child {
-  padding: 0 20px;
-}
-.navlist li a:visited {
-  color: white;
-}
-.navlist li a:link {
-  color: white;
-}
-header ul li span {
-  padding-left: 34px;
-}
-.sns {
-  position: absolute;
-  top: 0;
-  right:30px;
-}
-.sns a{
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding-left: 15px;
-}
-.sns img{
-  width: 40px;
-  height: 40px;
-}
-#biglogo {
-  margin: 0 auto;
-  display: block;
-  width: 270px;
-  height: 270px;
-  border-radius: 50%;
-  margin-top: 50px;
-}
-header p {
-  font-size: 16px;
-  text-align: center;
-  margin-top: 120px;
-}
-main {
-  width: 100%;
-  height: 1200px;
-  color: #4F4F4F;
-  margin-top: 80px;
-}
-#main-top h4 {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 2;
-}
-.cheeselists {
-  display: flex;
-  justify-content: center;
-  flex:1;
+/* PC responsive */
+@media screen and (min-width:767px) {
+  body {
+    width: 100%;
+    margin: 0;
+  }
+  header {
+    width:100%;
+    height: 600px;
+    background-color: #343A40;
+    color: white;
+  }
+  nav {
+    height: 100px;
+  }
+  #logo {
+    height: 100px;
+    position: absolute;
+    top:0;
+    left:0;
+  }
+  .navlist {
+    /* padding: 0; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }
+  .navlist li{
+    /* height: 20px; */
+    width: 120px;
+    line-height: 100px;
+    list-style-type: none;
+    /* border-right: 1px solid white; */
+    position:relative;
+  }
+  .navlist li a {
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .line-right {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    width: 1px;
+    height: 20px;
+    background-color: white;
+  }
+  .navlist li a:link {
+    color: white;
+  }
+  .sns {
+    position: absolute;
+    top: 0;
+    right:30px;
+  }
+  .sns a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 15px;
+  }
+  .sns img{
+    width: 40px;
+    height: 40px;
+  }
+  #biglogo {
+    margin: 0 auto;
+    display: block;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    margin-top: 50px;
+  }
+  header p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 120px;
+  }
+  main {
+    width: 100%;
+    height: 1200px;
+    color: #4F4F4F;
+    margin-top: 80px;
+  }
+  #main-top h4 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+  }
+  .cheeselists {
+    display: flex;
+    justify-content: center;
+    flex:1;
 
+  }
+  .cheese-list {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .cheese-list:last-child img {
+    transform: rotate(270deg);
+    width: 85px;
+    height: 170px;
+    margin-top: -0px;
+    margin-bottom: -44px;
+  }
+  .cheese-list img {
+    border-radius: 10px;
+    margin-top: 40px;
+  }
+  .cheese-list h5 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .cheese-list p {
+    text-align: justify;
+    font-size: 14px;
+  }
+  #main-top h4:last-child {
+    margin: 50px 0;
+  }
+  section img {
+    border-radius: 30px;
+    width: 400px;
+    height: 300px;
+    display: block;
+    /* margin: 0 30px; */
+    margin-top: 140px;
+    object-fit: cover;
+  }
+  section img:last-child {
+    border-radius: 30px;
+    /* height: 300px; */
+    display: block;
+    margin: 0 auto;
+    margin-top: 140px;
+
+  }
+  section {
+    display: flex;
+    margin: 20px;
+    /* flex:1; */
+  }
+  .text {
+    margin: 0 20px;
+    /* width: 50%; */
+  }
+  .contact {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+    /* flex:1; */
+  }
+  #contact-form {
+    width: 100%;
+  }
+  #contact-form h3 {
+    font-size: 30px;
+  }
+  #contact-form p {
+    font-size: 16px;
+    display: inline-block;
+  }
+  #text {
+    width: 80%;
+    height: 60px;
+  }
+  .input {
+    margin-top: 15px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: start; */
+    height: 60px;
+
+  }
+  #email, #name, .btn {
+    width: 150px;
+  }
+  .btn {
+    position: relative;
+  }
+  #btn {
+    height: 60px;
+    width: 100px;
+    border: 1px solid black;
+    box-shadow: 2px 2px rgb(120, 124, 113);
+    background-color: rgb(187, 161, 161);
+    position: absolute;
+  }
+  #btn:active {
+    top: 2px;
+    left: 2px;
+    box-shadow: none;
+  }
+  #contact-form p:last-child {
+    margin-left: 25px;
+    font-weight: bold;
+  }
+  #map {
+    margin-top: 25px;
+    width: 700px;
+  }
+  #map h4 {
+    line-height: 2;
+    margin: 0;
+  }
+  #map img {
+    width: 100%;
+    border: 1px solid black;
+    /* width: 700px; */
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+  }
+  footer {
+    text-align: center;
+    height: 90px;
+  }
+  footer hr {
+    width: 20%;
+  }
+  footer p {
+    font-size: 12px;
+    margin: 5px 0;
+  }
+  footer p:first-of-type {
+    font-size: 10px;
+  }
+  footer p:last-of-type {
+    font-size: 14px;
+  }
 }
-.cheese-list {
-  width: 30%;
-  margin: 0 auto;
-  text-align: center;
+
+/* mobile responsive */
+@media screen and (max-width: 480px) {
+  body {
+    width: 100%;
+    margin: 0;
+    /* padding: 0 5px; */
+  }
+  header {
+    width:100%;
+    height: 350px;
+    background-color: #343A40;
+    color: white;
+  }
+  nav {
+    height: 60px;
+  }
+  #logo {
+    display: none;
+  }
+  .navlist {
+    /* padding: 0; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* padding: 0; */
+  }
+  .navlist li{
+    /* height: 20px; */
+    /* width:25%; */
+    line-height: 60px;
+    list-style-type: none;
+    margin-right: 30px;
+    /* border-right: 1px solid white; */
+    position:relative;
+    font-size: 0.5rem;
+  }
+  .navlist li:nth-child(1){
+    margin-left: -20px;
+  }
+  .navlist li a {
+    text-decoration: none;
+    display: inline-block;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+  }
+  .line-right {
+    display: block;
+    position: absolute;
+    top: 23px;
+    right: -16px;
+    width: 1px;
+    height: 15px;
+    background-color: white;
+  }
+  .navlist li a:link {
+    color: white;
+  }
+  .sns {
+    display: none;
+  }
+  #biglogo {
+    margin: 0 auto;
+    display: block;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-top: 15px;
+  }
+  header p {
+    font-size: 0.6rem;
+    text-align: center;
+    /* margin:35px 90px 0 90px; */
+    margin: 35px auto;
+    width: 80%;
+  }
+  main {
+    width: 100%;
+    /* height: 3000px; */
+    color: #4F4F4F;
+    padding: 0 10px;
+  }
+  #main-top h4 {
+    text-align: center;
+    font-size: 0.7rem;
+    width: 80%;
+    font-weight: 400;
+    /* line-height: 2; */
+    /* margin-top: 10px; */
+    margin: 20px auto;
+  }
+  .cheeselists {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 80%; */
+  }
+  .cheese-list {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .cheese-list:last-child img {
+    transform: rotate(270deg);
+    width: 200px;
+    height: 280px;
+    margin-top: -10px;
+    margin-bottom: -40px;
+    object-fit: cover;
+  }
+  .cheese-list img {
+    border-radius: 10px;
+    margin-top: 40px;
+    object-fit: cover;
+    width: 280px;
+    height: 200px;
+  }
+  .cheese-list h5 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .cheese-list p {
+    text-align: justify;
+    font-size: 14px;
+  }
+
+  #main-top h4:last-child {
+    /* margin: 50px 0; */
+  }
+  section img {
+    display: block;
+    object-fit: cover;
+    border-radius: 30px;
+    height: 200px;
+    width: 350px;
+    margin: 30px auto;
+  }
+  section img:last-child {
+    border-radius: 30px;
+    object-fit: cover;
+    height: 200px;
+    width: 350px;
+    /* display: block; */
+    margin: 30px 12.5px;
+    position: absolute;
+    /* top:0;
+    left: 20px; */
+  }
+  section {
+    display: flex;
+    /* margin: 50px; */
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .text {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .text:nth-child(1) {
+    margin-top: 260px;
+  }
+
+  /* contact form */
+  .contact {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* margin: 10px; */
+    width: 100%;
+    /* height: 1000px; */
+  }
+  #contact-form {
+    width: 90%;
+  }
+  #contact-form h3 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  #contact-form p {
+    /* font-size: 1rem; */
+    /* display: inline-block; */c
+    margin-top: 10px;
+  }
+  #text {
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+  }
+  .input {
+    margin-top: 15px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    /* height: 200px; */
+    /* width: 100%; */
+  }
+  #email, #name, .btn {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    margin-top: 15px;
+    display: block;
+  }
+  .btn {
+    position: relative;
+  }
+  #btn {
+    height: 40px;
+    width: 100px;
+    border: 1px solid black;
+    box-shadow: 2px 2px rgb(120, 124, 113);
+    background-color: rgb(187, 161, 161);
+    position: absolute;
+  }
+  #btn:active {
+    top: 2px;
+    left: 2px;
+    box-shadow: none;
+  }
+  #contact-form p:last-child {
+    /* margin-left: 25px; */
+    font-weight: bold;
+  }
+  #map {
+    margin-top: 25px;
+    width: 100%;
+  }
+  #map h4 {
+    line-height: 2;
+    margin: 0;
+  }
+  #map img {
+    width: 80%;
+    border: 1px solid black;
+    /* width: 700px; */
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+  }
+  footer {
+    text-align: center;
+    height: 90px;
+  }
+  footer hr {
+    width: 20%;
+  }
+  footer p {
+    font-size: 12px;
+    margin: 5px 0;
+  }
+  footer p:first-of-type {
+    font-size: 10px;
+  }
+  footer p:last-of-type {
+    font-size: 14px;
+  }
 }
-.cheese-list:last-child img {
-  transform: rotate(270deg);
-  width: 85px;
-  height: 170px;
-  margin-top: -0px;
-  margin-bottom: -44px;
-}
-.cheese-list img {
-  border-radius: 10px;
-  margin-top: 40px;
-}
-.cheese-list h5 {
-  font-size: 16px;
-  margin-bottom: 0;
-}
-.cheese-list p {
-  text-align: justify;
-  font-size: 14px;
-}
-#main-top h4:last-child {
-  margin: 50px 0;
-}
-section img {
-  border-radius: 30px;
-  width: 500px;
-  display: block;
-  margin: 0 30px;
-}
-section img:last-child {
-  border-radius: 30px;
-  height: 300px;
-  display: block;
-  margin: 0 auto;
-}
-section {
-  display: flex;
-  margin: 50px;
-  flex:1;
-}
-.text {
-  margin: 0 40px;
-  width: 700px;
-}
-.contact {
-  display: flex;
-  justify-content: space-evenly;
-  flex:1;
-}
-#contact-form {
-  width: 600px;
-}
-#contact-form h3 {
-  font-size: 30px;
-}
-#contact-form p {
-  font-size: 16px;
-  display: inline-block;
-}
-#text {
-  width: 550px;
-  height: 60px;
-}
-.input {
-  margin-top: 15px;
-  display: flex;
-  justify-content: space-between;
-  height: 60px;
-}
-#email, #name, .btn {
-  width: 150px;
-}
-.btn {
-  position: relative;
-}
-#btn {
-  height: 60px;
-  width: 100px;
-  border: 1px solid black;
-  box-shadow: 2px 2px rgb(120, 124, 113);
-  background-color: rgb(187, 161, 161);
-  position: absolute;
-}
-#btn:active {
-  top: 2px;
-  left: 2px;
-  box-shadow: none;
-}
-#contact-form p:last-child {
-  margin-left: 25px;
-  font-weight: bold;
-}
-#map {
-  margin-top: 25px;
-  width: 700px;
-}
-#map h4 {
-  line-height: 2;
-  margin: 0;
-}
-#map img {
-  width: 400px;
-  border: 1px solid black;
-  width: 700px;
-  height: 400px;
-  display: block;
-  margin: 0 auto;
-}
-footer {
-  text-align: center;
-  height: 90px;
-}
-footer hr {
-  width: 20%;
-}
-footer p {
-  font-size: 12px;
-  margin: 5px 0;
-}
-footer p:first-of-type {
-  font-size: 10px;
-}
-footer p:last-of-type {
-  font-size: 14px;
-}
+
+
+
